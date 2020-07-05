@@ -21,12 +21,14 @@ const useStyles = makeStyles((theme) => ({
         gridTemplateColumns: gridTemplate.colums,
         alignItems: 'center',
         justifyItems: 'center',
+        backgroundColor: colors.mainD1,
     },
     iconLikePressed: {
         gridColumn: 1,
         width: '40%',
         maxHeight: '100%',
         objectFit: 'contain',
+        backgroundColor: colors.mainD1,
     },
     title: {
         justifySelf: 'flex-start',
@@ -38,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
         fontStyle: 'normal',
         lineHeight: 'normal',
         letterSpacing: 'normal',
+        backgroundColor: colors.mainD1,
         color: colors.onSurfaceHighEmphasis,
     },
     close: {
@@ -45,6 +48,7 @@ const useStyles = makeStyles((theme) => ({
         maxHeight: '100%',
         width: '40%',
         objectFit: 'contain',
+        backgroundColor: colors.mainD1,
     }
 }))
 
