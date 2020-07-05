@@ -35,7 +35,7 @@ export default function LayerLikes() {
                         className={classes.close}
                         alt="no imagen"
                         onClick={() => {
-                            dispatch(setIsChecked(false))
+                            dispatch(setIsChecked())
                         }}
                     />
                 </ListSubheader>

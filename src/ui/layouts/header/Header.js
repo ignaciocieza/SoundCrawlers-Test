@@ -8,9 +8,6 @@ import userImage2x from '../../../assets/user-image@2x.png';
 import userImage3x from '../../../assets/user-image@3x.png';
 import useStyles from './header.styles';
 
-/*
-https://stackoverflow.com/questions/45870323/does-css-grid-have-a-flex-grow-function
-*/
 export default function Header() {
     const classes = useStyles();
 

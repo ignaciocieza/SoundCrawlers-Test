@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { gridTemplate, colors } from '../../../constants';
+import { gridTemplate, colors, maxHeight } from '../../../constants';
 
 const useStyles = makeStyles((theme) => ({
     bar: {
@@ -10,7 +10,10 @@ const useStyles = makeStyles((theme) => ({
         gridTemplateColumns: gridTemplate.colums,
         boxShadow: colors.shadows,
         backgroundColor: colors.mainDefault,
-
+        [maxHeight]: {
+            height: '15vh',
+            gridTemplateRows: '15vh'
+        }
     },
     oval: {
         width: '56%',
@@ -21,6 +24,14 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: '50%',
+        [theme.breakpoints.up('sm')]: {
+            width: '55%',
+            height: '67%',
+        },
+        [maxHeight]: {
+            width: '33%',
+            height: '78%'
+        }
     },
     logoSoundcrawlers: {
         width: '70%',
@@ -32,9 +43,12 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'flex-end',
     },
-    iconSearch:{
-        width:'47%',
+    iconSearch: {
+        width: '47%',
         objectFit: 'contain',
+        [maxHeight]: {
+            width: '33%',
+        }
     },
     containerItemThree: {
         width: '100%',
@@ -45,11 +59,9 @@ const useStyles = makeStyles((theme) => ({
     stickerUserImage: {
         width: '60%',
         objectFit: 'contain',
-    },
-    paper: {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
+        [maxHeight]: {
+            width: '33%',
+        }
     },
 }));
 

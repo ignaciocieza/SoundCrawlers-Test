@@ -1,19 +1,26 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { gridTemplate, colors } from '../../../constants';
+import { gridTemplate, colors, maxHeight } from '../../../constants';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         height: '70vh',
         backgroundColor: colors.mainDefault,
-        position:"relative",
+        position: "relative",
+        [maxHeight]: {
+            height: '65vh',
+            overflowY: 'auto',
+        },
     },
-    container:{
-        height: '70vh',
+    container: {
+        height: '100%',
         display: 'flex',
         flexDirection: 'column',
     },
     rootYoutube: {
         height: '50%',
+        [theme.breakpoints.up('sm')]: {
+            height: '60%',
+        }
     },
     youtubeVideo: {
         width: '100%',
@@ -24,9 +31,15 @@ const useStyles = makeStyles((theme) => ({
         height: '50%',
         display: 'flex',
         flexDirection: 'column',
+        [theme.breakpoints.up('sm')]: {
+            height: '40%',
+        }
     },
     rootDetailTitle: {
         height: '40%',
+        [theme.breakpoints.up('sm')]: {
+            display: 'flex'
+        }
     },
     trackTitle: {
         fontFamily: 'Roboto',
@@ -39,6 +52,17 @@ const useStyles = makeStyles((theme) => ({
         textTransform: 'uppercase',
         letterSpacing: ' 0.1em',
         marginLeft: '5%',
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '1.4em',
+            marginTop: '3%'
+        },
+        [theme.breakpoints.up('md')]: {
+            fontSize: '2em',
+        },
+        [maxHeight]: {
+            fontSize: '0.9em',
+            marginTop: '1%'
+        }
     },
     rootDetailUser: {
         height: '60%',
@@ -54,6 +78,9 @@ const useStyles = makeStyles((theme) => ({
     stickerUserImage: {
         width: '60%',
         objectFit: 'contain',
+        [maxHeight]: {
+            width: '33%',
+        }
     },
     detailUserItemTwo: {
         height: '70%',
@@ -71,6 +98,15 @@ const useStyles = makeStyles((theme) => ({
         lineHeight: 'normal',
         letterSpacing: 'normal',
         color: colors.onSurfaceHighEmphasis,
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '1.4em',
+        },
+        [theme.breakpoints.up('md')]: {
+            fontSize: '2em',
+        },
+        [maxHeight]: {
+            fontSize: '1em'
+        }
     },
     london1minAgo: {
         gridRow: 2,
@@ -82,6 +118,15 @@ const useStyles = makeStyles((theme) => ({
         lineHeight: 'normal',
         letterSpacing: 'normal',
         color: colors.onSurfaceMidEmphasis,
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '1.4em',
+        },
+        [theme.breakpoints.up('md')]: {
+            fontSize: '2em',
+        },
+        [maxHeight]: {
+            fontSize: '1em'
+        }
     },
     genre: {
         gridRow: 3,
@@ -94,12 +139,15 @@ const useStyles = makeStyles((theme) => ({
         letterSpacing: 'normal',
         textDecoration: 'underline',
         color: colors.onSurfaceHighEmphasis,
-    },
-    paper: {
-        padding: theme.spacing(2),
-        marginBottom: '1%',
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '1.3em',
+        },
+        [theme.breakpoints.up('md')]: {
+            fontSize: '1.9em',
+        },
+        [maxHeight]: {
+            fontSize: '0.9em'
+        }
     },
 }));
 

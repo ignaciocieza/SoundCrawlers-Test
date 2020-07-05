@@ -9,7 +9,7 @@ const indexReducer = (state = INITIAL_STATE, action) => {
         case indexTypeActions.SET_IS_CHECKED:
             return ({
                 ...state,
-                isChecked: action.payload
+                isChecked: !state.isChecked
             });
         default:
             return state;

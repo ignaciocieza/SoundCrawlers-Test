@@ -20,7 +20,7 @@ export default function ButtonFooter({ button, buttonStyle, event, icon, icon2x,
             </div>
             {
                 event ? (
-                    <span className={classes.number} style={{ color: colors[buttonStyle] }} onClick={() => dispatch(setIsChecked(true))}> {button}  </span>
+                    <span className={classes.number} style={{ color: colors[buttonStyle] }} onClick={() => dispatch(setIsChecked())}> {button}  </span>
                 ) : (
                         <span className={classes.number} style={{ color: colors[buttonStyle] }}> {button}  </span>
                     )

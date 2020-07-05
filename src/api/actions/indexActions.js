@@ -1,6 +1,5 @@
 import indexTypeActions from './indexTypeActions';
 
-export const setIsChecked = (value) => ({
+export const setIsChecked = () => ({
     type: indexTypeActions.SET_IS_CHECKED,
-    payload: value
 });

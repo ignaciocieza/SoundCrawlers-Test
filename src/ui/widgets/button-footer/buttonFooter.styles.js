@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { maxHeight } from '../../../constants';
 
 const useStyles = makeStyles((theme) => ({
     rootItem: {
@@ -16,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
     iconImg: {
         width: '50%',
         objectFit: 'contain',
+        [maxHeight]: {
+            width: '33%'
+        }
     },
     number: {
         fontFamily: 'Roboto',
@@ -25,6 +29,15 @@ const useStyles = makeStyles((theme) => ({
         fontStyle: 'normal',
         lineHeight: 'normal',
         letterSpacing: 'normal',
+        [theme.breakpoints.up('sm')]: {
+            fontSize: '1.5em',
+        },
+        [theme.breakpoints.up('md')]: {
+            fontSize: '2em',
+        },
+        [maxHeight]: {
+            fontSize: '1.2em'
+        }
     }
 }));
 
