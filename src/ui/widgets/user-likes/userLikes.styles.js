@@ -11,7 +11,10 @@ const useStyles = makeStyles((theme) => ({
         borderBottom: '1px solid #91929475',
         [maxHeight]: {
             height: '20vh',
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            height: '20vh',
+        },
     },
     userImg: {
         gridColumn: 1,
@@ -20,7 +23,10 @@ const useStyles = makeStyles((theme) => ({
         objectFit: 'contain',
         [maxHeight]: {
             width: '33%',
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            width: '30%',
+        },
     },
     titleContainer: {
         width: '100%',
@@ -46,7 +52,10 @@ const useStyles = makeStyles((theme) => ({
         },
         [maxHeight]: {
             fontSize: '1em'
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            fontSize: '1em'
+        },
     },
     subTitle: {
         fontFamily: 'Roboto',
@@ -65,8 +74,10 @@ const useStyles = makeStyles((theme) => ({
         },
         [maxHeight]: {
             fontSize: '1em'
-        }
-
+        },
+        [theme.breakpoints.up('lg')]: {
+            fontSize: '1em'
+        },
     },
     buttonFollow: {
         width: '70%',
@@ -91,7 +102,12 @@ const useStyles = makeStyles((theme) => ({
         [maxHeight]: {
             fontSize: '1em',
             width: '60%'
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            width: '46%',
+            height: '42%',
+            fontSize: '1.4em',
+        },
     },
     buttonFollowing: {
         width: '70%',
@@ -117,7 +133,12 @@ const useStyles = makeStyles((theme) => ({
         [maxHeight]: {
             fontSize: '1em',
             width: '60%'
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            width: '46%',
+            height: '42%',
+            fontSize: '1.4em',
+        },
     }
 }))
 

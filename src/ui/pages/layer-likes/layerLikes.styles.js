@@ -2,16 +2,15 @@ import { makeStyles } from '@material-ui/core/styles';
 import { gridTemplate, colors, maxHeight } from '../../../constants';
 
 const useStyles = makeStyles((theme) => ({
-    back: {
-        backgroundColor: colors.mainD1,
-        height: '70vh',
-    },
     root: {
         backgroundColor: colors.mainD1,
         height: '66vh',
         overflowY: 'auto',
         position: 'absolute',
         width: ' 100%',
+        [theme.breakpoints.up('lg')]: {
+            height: '64vh',
+        },
     },
     titleContainer: {
         height: '10vh',
@@ -24,7 +23,10 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: colors.mainD1,
         [maxHeight]: {
             height: '15vh',
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            height: '15vh',
+        },
     },
     iconLikePressed: {
         gridColumn: 1,
@@ -34,7 +36,10 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: colors.mainD1,
         [maxHeight]: {
             width: '33%',
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            width: '25%',
+        },
     },
     title: {
         justifySelf: 'flex-start',
@@ -66,7 +71,11 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: colors.mainD1,
         [maxHeight]: {
             width: '33%',
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            width: '25%',
+            cursor:'pointer',
+        },
     }
 }))
 

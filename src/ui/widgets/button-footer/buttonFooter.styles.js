@@ -17,6 +17,9 @@ const useStyles = makeStyles((theme) => ({
     iconImg: {
         width: '50%',
         objectFit: 'contain',
+        [theme.breakpoints.up('lg')]: {
+            width: '17%',
+        },
         [maxHeight]: {
             width: '33%'
         }
@@ -37,7 +40,11 @@ const useStyles = makeStyles((theme) => ({
         },
         [maxHeight]: {
             fontSize: '1.2em'
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            fontSize: '1.7em',
+            cursor:'pointer',
+        },
     }
 }));
 

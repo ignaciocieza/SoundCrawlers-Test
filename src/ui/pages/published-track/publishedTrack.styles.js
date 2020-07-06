@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
             height: '65vh',
             overflowY: 'auto',
         },
+        [theme.breakpoints.up('lg')]: {
+            height: '65vh',
+        },
     },
     container: {
         height: '100%',
@@ -62,7 +65,11 @@ const useStyles = makeStyles((theme) => ({
         [maxHeight]: {
             fontSize: '0.9em',
             marginTop: '1%'
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            fontSize: '1.4em',
+            marginTop: '1%'
+        },
     },
     rootDetailUser: {
         height: '60%',
@@ -80,7 +87,10 @@ const useStyles = makeStyles((theme) => ({
         objectFit: 'contain',
         [maxHeight]: {
             width: '33%',
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            width: '30%',
+        },
     },
     detailUserItemTwo: {
         height: '70%',
@@ -106,7 +116,10 @@ const useStyles = makeStyles((theme) => ({
         },
         [maxHeight]: {
             fontSize: '1em'
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            fontSize: '1.4em',
+        },
     },
     london1minAgo: {
         gridRow: 2,
@@ -126,7 +139,10 @@ const useStyles = makeStyles((theme) => ({
         },
         [maxHeight]: {
             fontSize: '1em'
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            fontSize: '1.4em',
+        },
     },
     genre: {
         gridRow: 3,
@@ -147,7 +163,10 @@ const useStyles = makeStyles((theme) => ({
         },
         [maxHeight]: {
             fontSize: '0.9em'
-        }
+        },
+        [theme.breakpoints.up('lg')]: {
+            fontSize: '1.3em',
+        },
     },
 }));
 

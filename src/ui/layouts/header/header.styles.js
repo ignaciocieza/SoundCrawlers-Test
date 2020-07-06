@@ -13,7 +13,12 @@ const useStyles = makeStyles((theme) => ({
         [maxHeight]: {
             height: '15vh',
             gridTemplateRows: '15vh'
+        },
+        [theme.breakpoints.up('lg')]: {
+            height: '15vh',
+            gridTemplateRows: '15vh'
         }
+
     },
     oval: {
         width: '56%',
@@ -28,10 +33,14 @@ const useStyles = makeStyles((theme) => ({
             width: '55%',
             height: '67%',
         },
+        [theme.breakpoints.up('lg')]: {
+            width: '30%',
+        },
         [maxHeight]: {
             width: '33%',
             height: '78%'
-        }
+        },
+        
     },
     logoSoundcrawlers: {
         width: '70%',
@@ -46,6 +55,9 @@ const useStyles = makeStyles((theme) => ({
     iconSearch: {
         width: '47%',
         objectFit: 'contain',
+        [theme.breakpoints.up('lg')]: {
+            width: '30%',
+        },
         [maxHeight]: {
             width: '33%',
         }
@@ -59,6 +71,9 @@ const useStyles = makeStyles((theme) => ({
     stickerUserImage: {
         width: '60%',
         objectFit: 'contain',
+        [theme.breakpoints.up('lg')]: {
+            width: '30%',
+        },
         [maxHeight]: {
             width: '33%',
         }
