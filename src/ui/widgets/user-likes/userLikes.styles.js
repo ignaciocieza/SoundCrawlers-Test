@@ -3,7 +3,7 @@ import { gridTemplate, colors, maxHeight } from '../../../constants';
 
 const useStyles = makeStyles((theme) => ({
     container: {
-        height: '10vh',
+        height: '13vh',
         display: 'grid',
         gridTemplateColumns: gridTemplate.colums,
         alignItems: 'center',
@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
     },
     buttonFollow: {
         width: '70%',
-        height: '50%',
+        height: '41%',
         gridColumn: '4 /span 5',
         borderRadius: '1em',
         backgroundColor: colors.primaryDefault,
@@ -111,7 +111,7 @@ const useStyles = makeStyles((theme) => ({
     },
     buttonFollowing: {
         width: '70%',
-        height: '50%',
+        height: '41%',
         gridColumn: '4 /span 5',
         backgroundColor: colors.mainD1,
         border: `2px solid ${colors.primaryDefault}`,
