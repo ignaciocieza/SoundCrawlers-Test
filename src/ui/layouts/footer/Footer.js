@@ -3,7 +3,6 @@ import ButtonFooter from '../../widgets/button-footer/ButtonFooter';
 import {footerIcons} from '../../../api/data';
 import useStyles from './footer.styles';
 
-
 export default function Footer() {
     const classes = useStyles();
 

@@ -101,7 +101,7 @@ const useStyles = makeStyles((theme) => ({
         },
         [maxHeight]: {
             fontSize: '1em',
-            width: '60%'
+            width: '48%'
         },
         [theme.breakpoints.up('lg')]: {
             width: '46%',
@@ -132,7 +132,7 @@ const useStyles = makeStyles((theme) => ({
         },
         [maxHeight]: {
             fontSize: '1em',
-            width: '60%'
+            width: '48%'
         },
         [theme.breakpoints.up('lg')]: {
             width: '46%',

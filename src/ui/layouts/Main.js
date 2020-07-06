@@ -4,7 +4,6 @@ import ErrorBoundary from '../widgets/error-boundary/ErrorBoundary';
 import Spinner from '../widgets/with-spinner/Spinner';
 
 const PublishedTrack = lazy(() => import('../pages/published-track/PublishedTrack'));
-const LayerLikes = lazy(() => import('../pages/layer-likes/LayerLikes'));
 
 const Main = () => (
     <React.Fragment>
@@ -12,7 +11,6 @@ const Main = () => (
             <ErrorBoundary>
                 <Suspense fallback={<Spinner />}>
                     <Route exact path='/' component={PublishedTrack} />
-                    <Route exact path='/layerlikes' component={LayerLikes} />
                 </Suspense>
             </ErrorBoundary>
         </Switch>

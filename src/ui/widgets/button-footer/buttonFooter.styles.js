@@ -6,6 +6,10 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        [maxHeight]: {
+            height: ' 100%',
+            justifyContent: 'space-evenly',
+        }
     },
     icon: {
         height: '40%',
@@ -21,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
             width: '17%',
         },
         [maxHeight]: {
-            width: '33%'
+            width: '24%'
         }
     },
     number: {
@@ -39,11 +43,11 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '2em',
         },
         [maxHeight]: {
-            fontSize: '1.2em'
+            fontSize: '1em'
         },
         [theme.breakpoints.up('lg')]: {
             fontSize: '1.7em',
-            cursor:'pointer',
+            cursor: 'pointer',
         },
     }
 }));

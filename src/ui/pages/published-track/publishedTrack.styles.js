@@ -8,7 +8,6 @@ const useStyles = makeStyles((theme) => ({
         position: "relative",
         [maxHeight]: {
             height: '65vh',
-            overflowY: 'auto',
         },
         [theme.breakpoints.up('lg')]: {
             height: '65vh',
